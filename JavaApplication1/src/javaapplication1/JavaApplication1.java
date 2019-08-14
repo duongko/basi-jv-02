@@ -56,7 +56,7 @@ public class JavaApplication1 {
         x = -b / a;
         System.out.println(x);
         System.out.printf("x = %d b = %d ", -b / a, b);
-
+        // comment aosdfasd 
     }
 
 }
