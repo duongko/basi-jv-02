@@ -18,41 +18,41 @@ public class Homework {
         // TODO code application logic here 
         //bài 1:tinh tong,hieu ,tich , luy thua ,thuong
        
-      //  Scanner sc = new Scanner(System.in);
-       // double a ;
-       // a = sc.nextDouble();
-       // double b;
-      //  b = sc.nextDouble();
-      // double tong = a + b;
-      //  double hieu = a - b;
-      //  double tich = a * b;
-      //  double thuong = a / b;
-        //luy thua k bt lam
-       // System.out.println("gia tri tong la:" + tong);
-       // System.out.println("gia tri hieu la: " + hieu);
-       // System.out.println("gia tri tich la:" + tich);
-      //  System.out.println("gia tri thuong la:" + thuong);
-        
-        ///bài tạp 2: giải phương trinh bac hai
         Scanner sc = new Scanner(System.in);
+        double a ;
+        a = sc.nextDouble();
+        double b;
+        b = sc.nextDouble();
+       double tong = a + b;
+       double hieu = a - b;
+        double tich = a * b;
+        double thuong = a / b;
+        double luythua = Math.pow(a,b);
+       System.out.println("gia tri tong la:" + tong);
+        System.out.println("gia tri hieu la: " + hieu);
+        System.out.println("gia tri tich la:" + tich);
+      System.out.println("gia tri thuong la:" + thuong);
+        System.out.println("gia tri luy thua" + luythua);
+        ///bài tạp 2: giải phương trinh bac hai
+       // Scanner sc = new Scanner(System.in);
          double A;
         A = sc.nextDouble();
-        System.out.println("nhap gia tri a la:" +A);
+        System.out.println(" gia tri A la:" +A);
         double B;
         B = sc.nextDouble();
         System.out.println("gia ti B la:" +B);
         double c = sc.nextDouble();
+        System.out.println("gia tri c la:" +c);
         if(A==0){
-            if(B==0 && c!=0){
-                System.out.println("Phuong trinh da cho vo nghiem");}
-            else if (B==0 && c==0)
-                System.out.println("phuong trinh da cho co vo so nghiem");
+          if(B==0 && c!=0){
+        System.out.println("Phuong trinh  vo nghiem");}
+        else if (B==0 && c==0)
+                System.out.println("phuong trinh  co vo so nghiem");
             }
         else {
-         double delta=B*B-4*A*c ; //tinh delta
+         double delta=B*B-4*A*c ; 
          double x1;
          double x2;
-         //tinh nghiem
          if (delta>0){
               x1=(double)((-B)+Math.sqrt(delta)/(2*A));
               x2=(double)((-B)-Math.sqrt(delta)/(2*A));
